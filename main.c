@@ -8,7 +8,7 @@ int main()
     fgets(cadena, sizeof(cadena),stdin);
     archivo=fopen("texto.txt","w");
     if (archivo==NULL){
-        printf("No.\n");
+        printf("No se pudo abrir el archivo de salida.\n");
         return 1;
     }
     fputs(cadena,archivo);
